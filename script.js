@@ -6,7 +6,6 @@ document.querySelector('.namebtn').addEventListener('click', function () {
   message.textContent = `Best of luck ${userName.value}!`;
 });
 let secretNumber = Math.trunc(Math.random() * 20 + 1);
-console.log(secretNumber);
 let score = 20;
 let highScore = 0;
 document.querySelector('.check').addEventListener('click', function () {
