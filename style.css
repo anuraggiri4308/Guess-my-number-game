@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  height: 100vh;
+  color: #333;
+  background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  position: absolute;
+  left: 126px;
+  right: 127px;
+  top: 63px;
+  bottom: 62px;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 40px 4px 70px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.guess-my-number {
+  position: absolute;
+  height: 68px;
+  left: 32%;
+  top: 2.5%;
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 68px;
+  display: flex;
+  align-items: center;
+  color: rgba(17, 14, 14, 0.9);
+}
+
+.name {
+  position: absolute;
+  width: 215px;
+  height: 70px;
+  left: 11.5%;
+  top: 41%;
+  background: #ffffff;
+  border: 2px solid #000000c7;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 30px;
+  font-weight: bold;
+  text-indent: 5px;
+  text-align: center;
+}
+
+.namebtn {
+  left: 13%;
+  top: 57.5%;
+}
+
+.guess {
+  position: absolute;
+  width: 215px;
+  height: 70px;
+  left: 70%;
+  top: 40%;
+  font-weight: bold;
+  background: #ffffff;
+  border: 2px solid #000000c7;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 50px;
+  text-indent: 20px;
+  text-align: center;
+}
+
+::placeholder {
+  color: rgb(206, 201, 201);
+}
+
+.btn {
+  position: absolute;
+  width: 182px;
+  height: 49px;
+  background: rgba(212, 56, 101, 0.973);
+  border-radius: 10px;
+  border-style: none;
+  cursor: pointer;
+}
+
+.check {
+  left: 73.5%;
+  top: 57.5%;
+  width: 140px;
+}
+
+.btn:hover {
+  background: rgba(187, 23, 70, 0.94);
+  box-shadow: inset;
+}
+
+.again {
+  left: 40%;
+  top: 86%;
+  position: absolute;
+  width: 245px;
+  height: 55px;
+  border-radius: 40px;
+}
+
+.message {
+  position: absolute;
+  height: 21px;
+  left: 39%;
+  top: 61%;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 41px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+.label-score {
+  position: absolute;
+  height: 29px;
+  left: 28%;
+  top: 72%;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 41px;
+  display: flex;
+  color: #000000;
+}
+
+.label-highscore {
+  position: absolute;
+  height: 29px;
+  left: 58%;
+  top: 72%;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 41px;
+  display: flex;
+  color: #000000;
+}
+
+.btn-text {
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  word-spacing: 5px;
+  letter-spacing: 1px;
+}
+
+.number {
+  position: absolute;
+  background: rgb(255, 255, 255);
+  color: #333;
+  font-size: 6rem;
+  width: 8rem;
+  padding: 1px;
+  text-align: center;
+  top: 18%;
+  left: 45%;
+  border-radius: 10px;
+}
+
+.line {
+  position: absolute;
+  width: 100%;
+  height: 0px;
+  top: 31%;
+  border: 3px solid #ffffff;
+}
+
+.between {
+  position: absolute;
+  left: 42%;
+  top: 44.5%;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  display: flex;
+  color: #000000;
+}
+.rules {
+  background-color: antiquewhite;
+  border-radius: 40px;
+  width: 100px;
+  height: 40px;
+  top: 91%;
+  left: 91%;
+}
+.rules-text {
+  color: #000000e0;
+}
+.rules:hover {
+  background-color: rgba(238, 238, 238, 0.671);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+p {
+  font-size: 1.6rem;
+}
+/* -------------------------- */
+/* CLASSES TO MAKE MODAL WORK */
+.hidden {
+  display: none;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(2px);
+  z-index: 5;
+}
+p .all-the-best {
+  font-weight: bold;
+  align-items: center;
+  color: rgb(255, 0, 0);
+}

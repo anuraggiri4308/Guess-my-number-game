@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Guess my number!</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1 class="guess-my-number">Guess My Number!</h1>
+      </header>
+      <span class="line"></span>
+      <section>
+        <div class="number">?</div>
+        <p class="between">(Between 1 to 20)</p>
+      </section>
+      <section>
+        <input type="text" class="name" placeholder="Your Name" />
+        <button class="btn namebtn">
+          <span class="btn-text">Submit Name</span>
+        </button>
+        <p class="message">Start Guessing...</p>
+        <input type="number" class="guess" placeholder="0-20" />
+        <button class="btn check"><span class="btn-text">Check!</span></button>
+      </section>
+      <section>
+        <p class="label-score">Score : <span class="score"> &nbsp20</span></p>
+        <p class="label-highscore">
+          Highscore :<span class="highscore"> &nbsp0</span>
+        </p>
+        <button class="btn again">
+          <span class="btn-text">Start Again!</span>
+        </button>
+      </section>
+      <section>
+        <div class="modal hidden">
+          <button class="close-modal">&times;</button>
+          <h1>Rules for the game😍</h1>
+          <p>
+            1. You have to guess a number between 1 to 20.<br />
+            2. On each wrong guess your score will be deducted by 1.<br />
+            3. Highscore will be updated if your score is greater than last
+            updated highscore.<br />
+
+            4. To refresh the game please press start again button.<br />
+            5. Enter Your name to proceed.<br />
+            &nbsp;*To close this popup you can press ESC key,close button or
+            anywhere outside this box.*
+
+            <span class="all-the-best"
+              >&emsp;&emsp;&emsp;&emsp;&emsp;All the best👍</span
+            >
+          </p>
+        </div>
+        <div class="overlay hidden"></div>
+      </section>
+    </main>
+    <button class="btn rules">
+      <span class="btn-text rules-text">Rules</span>
+    </button>
+    <script src="script.js"></script>
+  </body>
+</html>
