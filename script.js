@@ -58,7 +58,6 @@ document.querySelector('.again').addEventListener('click', function () {
 document.querySelector('.rules').addEventListener('click', function () {
   document.querySelector('.modal').classList.remove('hidden');
   document.querySelector('.overlay').classList.remove('hidden');
-  console.log('clicked');
 });
 //closing rules model with cross sign
 document.querySelector('.close-modal').addEventListener('click', function () {
