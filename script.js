@@ -4,6 +4,7 @@ let userName = document.querySelector('.name');
 
 document.querySelector('.namebtn').addEventListener('click', function () {
   message.textContent = `Best of luck ${userName.value}!`;
+  document.querySelector('.message').style.left = '37%';
 });
 let secretNumber = Math.trunc(Math.random() * 20 + 1);
 let score = 20;
@@ -21,6 +22,7 @@ document.querySelector('.check').addEventListener('click', function () {
     document.querySelector('.number').style.width = '18%';
     document.querySelector('.number').style.left = '42.5%';
     document.querySelector('.number').textContent = secretNumber;
+    document.querySelector('.message').style.left = '35%';
     if (score > highScore) {
       highScore = score;
     }
@@ -31,6 +33,7 @@ document.querySelector('.check').addEventListener('click', function () {
         ? (message.textContent = `📈 Guess is high ${userName.value}!`)
         : (message.textContent = `📉 Guess is low ${userName.value}!`);
       score--;
+      document.querySelector('.message').style.left = '35%';
       document.querySelector('body').style.backgroundImage =
         'linear-gradient(to top left, #753682 0%, #bf2e34 100%)';
       document.querySelector('.score').textContent = score;
