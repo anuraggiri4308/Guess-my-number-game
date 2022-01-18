@@ -25,8 +25,8 @@ document.querySelector('.check').addEventListener('click', function () {
     document.querySelector('.message').style.left = '35%';
     if (score > highScore) {
       highScore = score;
+      document.querySelector('.highscore').textContent = score;
     }
-    document.querySelector('.highscore').textContent = score;
   } else if (guessNumber !== secretNumber) {
     if (score > 1) {
       guessNumber > secretNumber
